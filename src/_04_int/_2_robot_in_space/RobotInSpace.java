@@ -42,7 +42,13 @@ public class RobotInSpace implements KeyEventDispatcher {
 				}
 				if(keyPressed==right) {
 					rob.setAngle(90);
+					rob.microMove(5);
 				}
+				if(keyPressed==left) {
+					rob.setAngle(270);
+					rob.microMove(5);
+				}
+				
 				
 		
 		// 2. Print out the keyPressed variable and write down the numbers for
